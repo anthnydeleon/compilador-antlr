@@ -10,7 +10,10 @@ Parser de uma calculadora com ANTLR. A gramática permite:
 - Baixa o Antlr no site oficial (https://www.antlr.org/download/antlr-4.13.2-complete.jar)
 - você deve referenciar este JAR como biblioteca do seu projeto
 - Gerar os arquivos JAVA a partir do arquivo Grammar.g4, o comando é este:
-``` java -cp antlr-4.13.2-complete.jar org.antlr.v4.Tool Grammar.g4 -o .\src\io\compiler\core\ -package io.compiler.core```
+```java -cp antlr-4.13.2-complete.jar org.antlr.v4.Tool Grammar.g4 -o ./src/io/compiler/core/ -package io.compiler.core```
+```javac -cp .:antlr-4.13.2-complete.jar -d bin src/io/compiler/core/*.java src/io/compiler/main/*.java```
+```java -cp bin:antlr-4.13.2-complete.jar io.compiler.main.MainClass```
+
 - Rodar o arquivo MainClass.java
 
 ## Alterar o arquivo input.in para a gramática aceita

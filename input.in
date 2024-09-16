@@ -2,5 +2,5 @@ program
     x = 3
     y = 3
     z= 2
-    (x*y+z)/2
+    (x*y+z)/3
 endprog
